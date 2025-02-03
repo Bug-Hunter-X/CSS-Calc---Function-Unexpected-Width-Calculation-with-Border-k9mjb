@@ -1,0 +1,10 @@
+The solution involves adjusting the `calc()` function to account for the border width:
+
+```css
+div {
+  width: calc(100% - 20px - 20px); /* Subtract double the border width */
+  border: 10px solid red;
+}
+```
+
+By subtracting twice the border width (10px * 2 = 20px) from the `calc()` expression, we ensure the element's width is correctly calculated, including the border.
